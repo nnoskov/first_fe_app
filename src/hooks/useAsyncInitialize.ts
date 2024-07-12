@@ -1,0 +1,15 @@
+import { useEffect, useState } from "react";
+
+export function useAsyncInitialize<T>(
+  func: () => Promise<T>,
+  desp: any[] = []
+) {
+  const [state, setState] = useState<T | undefined>();
+  useEffect(() => {
+    (async () => {
+      setState(await func());
+    })();
+  }, desp);
+
+  return state;
+}
