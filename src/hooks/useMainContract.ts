@@ -61,7 +61,7 @@ export function useMainContract() {
       return mainContract?.sendWithdrawalRequest(
         sender,
         toNano("0.01"),
-        toNano("0.01")
+        toNano("0.02")
       );
     },
   };

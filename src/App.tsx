@@ -59,7 +59,7 @@ function App() {
               sendWithdrawalRequest();
             }}
           >
-            Request 0.01 TON withdrawal
+            Request 0.02 TON withdrawal
           </a>
         )}
       </div>
