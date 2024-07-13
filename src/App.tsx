@@ -2,6 +2,7 @@ import "./App.css";
 import { TonConnectButton } from "@tonconnect/ui-react";
 import { useMainContract } from "./hooks/useMainContract";
 import { useTonConnect } from "./hooks/useTonConnect";
+import { fromNano } from "ton-core";
 
 function App() {
   const {
@@ -11,6 +12,7 @@ function App() {
     // owner_address,
     contract_balance,
     sendIncrement,
+    sendDeposit,
   } = useMainContract();
 
   const { connected } = useTonConnect();
@@ -25,7 +27,9 @@ function App() {
           <b>Our contract address</b>
           <div className="Hint">{contract_address?.slice(0, 30) + "..."}</div>
           <b>Our contract Balance</b>
-          <div className="Hint">{contract_balance}</div>
+          {contract_balance && (
+            <div className="Hint">{fromNano(contract_balance)}</div>
+          )}
         </div>
         <div className="Card">
           <b>Counter Value</b>
@@ -38,6 +42,15 @@ function App() {
             }}
           >
             Increment by 5
+          </a>
+        )}
+        {connected && (
+          <a
+            onClick={() => {
+              sendDeposit();
+            }}
+          >
+            Deposit by 0.01
           </a>
         )}
       </div>

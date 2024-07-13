@@ -54,5 +54,8 @@ export function useMainContract() {
     sendIncrement: async () => {
       return mainContract?.sendIncrement(sender, toNano("0.01"), 5);
     },
+    sendDeposit: async () => {
+      return mainContract?.sendDeposit(sender, toNano("0.01"));
+    },
   };
 }
