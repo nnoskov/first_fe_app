@@ -3,7 +3,7 @@ import { MainContract } from "../contracts/MainCotract";
 import { useTonClient } from "./useTonClient";
 import { useAsyncInitialize } from "./useAsyncInitialize";
 import { Address, OpenedContract } from "ton-core";
-import { toNano } from "ton-core";
+import { toNano, fromNano } from "ton-core";
 import { useTonConnect } from "./useTonConnect";
 
 export function useMainContract() {
@@ -49,7 +49,7 @@ export function useMainContract() {
 
   return {
     contract_address: mainContract?.address.toRawString(),
-    contract_balance: balance,
+    contract_balance: fromNano(`${balance}`),
     ...contractData,
     sendIncrement: async () => {
       return mainContract?.sendIncrement(sender, toNano("0.01"), 5);
