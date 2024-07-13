@@ -24,7 +24,7 @@ export function useMainContract() {
   const mainContract = useAsyncInitialize(async () => {
     if (!client) return;
     const contract = new MainContract(
-      Address.parse("EQCUB96075hnneKIQKYfBvv6pRtvPfuufVoD3XedPGq8fUL5")
+      Address.parse("EQCUB96075hnneKIQKYfBvv6pRtvPfuufVoD3XedPGq8fUL5") //EQCUB96075hnneKIQKYfBvv6pRtvPfuufVoD3XedPGq8fUL5
     );
     return client.open(contract) as OpenedContract<MainContract>;
   }, [client]);
@@ -52,7 +52,7 @@ export function useMainContract() {
     contract_balance: balance,
     ...contractData,
     sendIncrement: async () => {
-      return mainContract?.sendIncrement(sender, toNano("0.05"), 5);
+      return mainContract?.sendIncrement(sender, toNano("0.01"), 5);
     },
   };
 }
