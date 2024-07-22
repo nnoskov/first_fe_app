@@ -1,5 +1,7 @@
 {
   "url": "https://marsNearby.fun",
   "name": "Mars FE Applicatoin",
-  "iconUrl": "https://img.icons8.com/?size=100&id=AjIt6RN0oDLm&format=png&color=000000"
+  "iconUrl": "https://ton-connect.github.io/demo-dapp-with-react-ui/apple-touch-icon.png",
+  "termsOfUseUrl": "https://ton-connect.github.io/demo-dapp-with-react-ui/terms-of-use.txt",
+  "privacyPolicyUrl": "https://ton-connect.github.io/demo-dapp-with-react-ui/privacy-policy.txt"
 }
