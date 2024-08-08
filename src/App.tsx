@@ -45,7 +45,7 @@ function App() {
             showAlert();
           }}
         >
-          Have a fun!
+          Have a fun, bro!
         </a>
         <br />
         {connected && (
