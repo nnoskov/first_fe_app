@@ -16,7 +16,7 @@ export type MainContractConfig = {
 };
 
 export function mainContractConfigToCell(config: MainContractConfig): Cell {
-  var c = beginCell()
+  const c = beginCell()
     .storeUint(config.number, 32)
     .storeAddress(config.address)
     .storeAddress(config.owner_address)

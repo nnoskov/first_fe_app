@@ -48,7 +48,7 @@ export function useMainContract() {
   }, [mainContract]);
 
   return {
-    contract_address: mainContract?.address.toRawString(),
+    contract_address: mainContract?.address.toString(),
     contract_balance: balance ? fromNano(balance) : 0,
     ...contractData,
     sendIncrement: async () => {
