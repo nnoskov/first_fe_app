@@ -1,6 +1,6 @@
 {
-  "url": "https://marsnearby.fun",
-  "name": "Domainservice",
+  "url": "tonsite://Domainservice.ton",
+  "name": "Domainservice.ton",
   "iconUrl": "https://marsnearby.fun/jettons/panda/Logo_free.png",
   "termsOfUseUrl": "https://ton-connect.github.io/demo-dapp-with-react-ui/terms-of-use.txt",
   "privacyPolicyUrl": "https://ton-connect.github.io/demo-dapp-with-react-ui/privacy-policy.txt"
