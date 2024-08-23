@@ -8,8 +8,6 @@ function App() {
   const {
     contract_address,
     counter_value,
-    // recent_sender,
-    // owner_address,
     contract_balance,
     sendIncrement,
     sendDeposit,
@@ -22,7 +20,7 @@ function App() {
   };
 
   return (
-    <div>
+    <>
       <div className="App">
         <TonConnectButton />
       </div>
@@ -78,7 +76,7 @@ function App() {
           </a>
         )}
       </div>
-    </div>
+    </>
   );
 }
 
