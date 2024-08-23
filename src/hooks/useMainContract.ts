@@ -34,7 +34,7 @@ export function useMainContract() {
       if (!mainContract) return;
       setContractData(null);
       const val = await mainContract.getData();
-      const { balance } = await mainContract.getBalance();
+      const balance = await mainContract.getBalance();
       setContractData({
         counter_value: val.number,
         recent_sender: val.recent_sender,
