@@ -1,5 +1,5 @@
 {
-  "url": "tonsite://Domainservice.ton",
+  "url": "Domainservice.ton",
   "name": "Domainservice",
   "iconUrl": "https://marsnearby.fun/jettons/panda/Logo_free.png",
   "termsOfUseUrl": "https://ton-connect.github.io/demo-dapp-with-react-ui/terms-of-use.txt",
